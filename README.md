@@ -25,13 +25,13 @@ The workflow was verified in a new Windows directory using R 4.6.1, an isolated 
 
 ## What runs and what it creates
 
-Run the commands from the repository root. Analysis scripts are in `R/`, the frozen aggregate comparison tables are in `expected/`, and the run order is:
+Run the commands from the repository root. Analysis scripts are in the repository root, the frozen aggregate comparison tables are in `expected/`, and the run order is:
 
-1. `run_all.R` validates the input files. `R/A1_analysis.R` calls `R/audit_nhanes.R` to check historical counts and writes `audit_counts_R.csv`.
-2. `R/A1_analysis.R` fits the two survey designs with masked strata and nested PSUs. It obtains joint totals, uses Taylor linearization for the ratio contrasts and derives design-based t intervals. It generates the main analysis, sensitivity estimates, bounds and quality audit counts.
-3. The runner calls the reusable function in `R/A1_ReasonCode_Audit_Code.R` to verify reason code 2 against both full VCTE releases and the frozen analysis outputs. The runner keeps record-level results in memory. Calling the audit script directly exports a participant-keyed CSV locally. Keep that export and its console log out of commits and releases.
-4. `R/plot_sample_flow.R` makes an independent reconstruction of the participant flow from the generated counts. `R/A1_plot.R` draws the six principal contrasts and their confidence intervals in Figure 2.
-5. `R/check_results.R` compares the eight generated CSVs with the frozen aggregate copies in `expected/`. See [RESULTS_CHECK.md](documentation/RESULTS_CHECK.md) for the observed check and [DATA_DICTIONARY.md](documentation/DATA_DICTIONARY.md) for input and output fields.
+1. `run_all.R` validates the input files. `A1_analysis.R` calls `audit_nhanes.R` to check historical counts and writes `audit_counts_R.csv`.
+2. `A1_analysis.R` fits the two survey designs with masked strata and nested PSUs. It obtains joint totals, uses Taylor linearization for the ratio contrasts and derives design-based t intervals. It generates the main analysis, sensitivity estimates, bounds and quality audit counts.
+3. The runner calls the reusable function in `A1_ReasonCode_Audit_Code.R` to verify reason code 2 against both full VCTE releases and the frozen analysis outputs. The runner keeps record-level results in memory. Calling the audit script directly exports a participant-keyed CSV locally. Keep that export and its console log out of commits and releases.
+4. `check_results.R` compares the eight generated CSVs with the frozen aggregate copies in `expected/`. See [RESULTS_CHECK.md](documentation/RESULTS_CHECK.md) for the observed check and [DATA_DICTIONARY.md](documentation/DATA_DICTIONARY.md) for input and output fields.
+5. `plot_sample_flow.R` makes an independent reconstruction of the participant flow from the generated counts. `A1_plot.R` draws the six principal contrasts and their confidence intervals in Figure 2.
 
 The output directory `A1_results/` contains `A1_primary_results.csv`, `A1_bounds.csv`, `A1_sensitivity.csv`, `A1_sample_flow.csv`, `A1_quality_crosstab.csv`, `A1_at_8_kpa.csv`, `A1_design.csv`, `A1_count_reconciliation.csv`, `A1_sessionInfo.txt`, `A1_sample_flow_figure.png`, `A1_delta_figure.png` and `A1_delta_figure.pdf`. The reconstructed flow graphic uses a different layout from submission Figure 1. The verified submission graphics remain in the separate submission package.
 

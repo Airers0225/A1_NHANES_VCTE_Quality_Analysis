@@ -34,9 +34,9 @@ for (i in seq_along(paths)) {
 }
 cat("Verified all eight CDC XPT inputs against the pinned SHA-256 manifest.\n")
 
-sys.source(file.path("R", "A1_analysis.R"), envir = new.env())
+sys.source("A1_analysis.R", envir = new.env())
 reason_audit <- new.env()
-sys.source(file.path("R", "A1_ReasonCode_Audit_Code.R"), envir = reason_audit)
+sys.source("A1_ReasonCode_Audit_Code.R", envir = reason_audit)
 checked <- reason_audit$audit_reason_codes(".")
 stopifnot(
   identical(unname(vapply(checked$audited, function(x) nrow(x$raw), integer(1))), c(179L, 138L)),
@@ -45,6 +45,6 @@ stopifnot(
   sum(checked$records$audit_class == "S1_other_column_yes") == 13L
 )
 cat("Reason code 2 audit verified in both releases. No record-level CSV was written.\n")
-sys.source(file.path("R", "plot_sample_flow.R"), envir = new.env())
-sys.source(file.path("R", "A1_plot.R"), envir = new.env())
-sys.source(file.path("R", "check_results.R"), envir = new.env())
+sys.source("check_results.R", envir = new.env())
+sys.source("plot_sample_flow.R", envir = new.env())
+sys.source("A1_plot.R", envir = new.env())

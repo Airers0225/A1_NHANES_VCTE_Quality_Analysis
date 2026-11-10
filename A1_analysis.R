@@ -10,7 +10,7 @@ cat("R and survey:", R.version.string, as.character(packageVersion("survey")), "
 # R reads SAS XPORT numeric zero natively. Record old Python/R comparison
 # even if the original script's final equality assertion fails.
 audit <- tryCatch({
-  sys.source(file.path("R", "audit_nhanes.R"), envir = new.env())
+  sys.source("audit_nhanes.R", envir = new.env())
   NULL
 }, error = identity)
 if (inherits(audit, "error")) message("Old R audit status: ", conditionMessage(audit))
