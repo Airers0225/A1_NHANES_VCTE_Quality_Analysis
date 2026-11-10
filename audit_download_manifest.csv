@@ -1,0 +1,9 @@
+cycle_start,file,url,download_date_Asia_Shanghai,bytes,sha256,rows,duplicate_SEQN
+2017,P_DEMO,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/P_DEMO.xpt,2026-11-04,3614720,2e46c6c26bf77cd8989f64011ace12cbf42c0f3e03414eb59acc5328c8f87913,15560,0
+2017,P_LUX,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/P_LUX.xpt,2026-11-04,1105920,0a8625bf308e2ae4ea36f7518d8532f058609b9d39ce86cb0642d306b23adced,10409,0
+2017,P_BMX,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/P_BMX.xpt,2026-11-04,2520640,7038d0da3169420a4a3cbaec09ac586a701b38e1c7b925431b60e13ac24fed66,14300,0
+2017,P_DIQ,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/P_DIQ.xpt,2026-11-04,3361520,79153f799fc2171792771c4aa250029c62807f14915f1f81405b03233b1e5ae3,14986,0
+2021,DEMO_L,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/DEMO_L.xpt,2026-11-04,2582160,ca4374a158b493b8b0163e1388da21d57a18d1b9cecff2aa4e2fa2bec494fe23,11933,0
+2021,LUX_L,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/LUX_L.xpt,2026-11-04,765680,40e49c5f1b58054e4787cd59cdeb224cd7658784b760274c3449bd4c1eb64c34,7199,0
+2021,BMX_L,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BMX_L.xpt,2026-11-04,1563200,44440c416d9ad709e8b1708a5975378ab4d5b18edc39eb5015c2ae7186500170,8860,0
+2021,DIQ_L,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/DIQ_L.xpt,2026-11-04,847600,9535a023673ae869afae19d842d8679e06f6a464606ac15900686b41ef05090f,11744,0
