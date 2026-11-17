@@ -21,7 +21,21 @@ Use R **4.6.1** with **foreign 0.8-91**, **survey 4.5**, and PNG/Cairo graphics 
 
 The XPT files are distributed by CDC and stay out of this repository. The diabetes questionnaire files are read by the historical count reconciliation. No diabetes or laboratory value is used to define the main sample or outcome. [CDC NHANES public portal](https://wwwn.cdc.gov/nchs/nhanes/) · [2017–March 2020 VCTE codebook](https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/P_LUX.htm) · [2021–2023 VCTE codebook](https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/LUX_L.htm)
 
-The workflow was verified in a new Windows directory using R 4.6.1, an isolated library of existing R packages and cached CDC files. All eight XPTs passed SHA-256 verification, and all eight regenerated aggregate CSVs matched the frozen results byte for byte. Automated download and installation of the full set of dependencies in a fresh environment remain unverified. See [RESULTS_CHECK.md](documentation/RESULTS_CHECK.md).
+An earlier cached-data run in an isolated Windows directory matched all eight
+main-analysis CSVs. For this v1.0.2 candidate, the input and result checks,
+reason-code audit and figures using frozen results, and independent demographics were
+tested. The primary estimates were not regenerated for this candidate. Fresh
+automatic download and dependency installation remain unverified.
+
+```sh
+Rscript --vanilla run_all.R --verify-only
+Rscript --vanilla check_results.R --references-only
+Rscript --vanilla run_all.R
+Rscript --vanilla check_results.R
+```
+
+`expected/` contains the eight untouched aggregate outputs from the original full
+analysis and `SHA256SUMS` pins their bytes. Keep generated outputs in `A1_results/`.
 
 ## What runs and what it creates
 
@@ -34,6 +48,21 @@ Run the commands from the repository root. Analysis scripts are in the repositor
 5. `plot_sample_flow.R` makes an independent reconstruction of the participant flow from the generated counts. `A1_plot.R` draws the six principal contrasts and their confidence intervals in Figure 2.
 
 The output directory `A1_results/` contains `A1_primary_results.csv`, `A1_bounds.csv`, `A1_sensitivity.csv`, `A1_sample_flow.csv`, `A1_quality_crosstab.csv`, `A1_at_8_kpa.csv`, `A1_design.csv`, `A1_count_reconciliation.csv`, `A1_sessionInfo.txt`, `A1_sample_flow_figure.png`, `A1_delta_figure.png` and `A1_delta_figure.pdf`. The reconstructed flow graphic uses a different layout from submission Figure 1. The verified submission graphics remain in the separate submission package.
+
+With existing verified `A1_results/` files, figures can also be generated with
+`Rscript --vanilla plot_sample_flow.R` and `Rscript --vanilla A1_plot.R`.
+To run just the reason-code audit without writing individual records, use
+`Rscript --vanilla -e 'source("A1_ReasonCode_Audit_Code.R"); stopifnot(is.list(audit_reason_codes(".")))'`.
+
+## Independent demographic description
+
+```sh
+Rscript --vanilla demographic_analysis/A1_Demographic_Analysis.R
+```
+
+See [the demographic README](demographic_analysis/README.md) for inputs, output and
+comparison with the bundled demographic CSV. This is the analysis for the manuscript
+demographic supplementary table. It does not modify the eight frozen results.
 
 ## Key results for verification
 
@@ -53,3 +82,8 @@ Target-domain counts are 7,792 and 5,580. Strict counts are 7,228 and 5,169. Rel
 ## Citation and release
 
 Citation metadata are in [CITATION.cff](CITATION.cff). Yiheng Jiang and Wenyan Yang hold the copyright (2026). The [MIT License](LICENSE) covers repository code and materials the authors have the right to license. CDC distributes the original NHANES data separately under its own terms. The MIT License does not apply to those data.
+
+This package is the **v1.0.2 release candidate** for the
+[GitHub repository](https://github.com/Airers0225/A1_NHANES_VCTE_Quality_Analysis).
+The [existing v1.0.1 Zenodo record](https://doi.org/10.5281/zenodo.24122078)
+remains the versioned archive for the earlier release. No v1.0.2 DOI has been assigned.

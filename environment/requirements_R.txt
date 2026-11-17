@@ -1,0 +1,28 @@
+# Verified R environment
+R 4.6.1
+foreign 0.8-91
+survey 4.5
+
+# Transitive dependencies loaded in the verified run
+DBI 1.3.0
+Matrix 1.7-5
+Rcpp 1.1.2
+lattice 0.22-9
+mitools 2.7
+survival 3.8-6
+
+# Setup in a fresh R 4.6.1 installation
+# 1. Use the recommended foreign package bundled with R, or install foreign.
+# 2. In R, use install.packages(c("foreign", "survey"), repos = "https://cloud.r-project.org")
+#    as needed. For the tested versions, use the listed CRAN versions if the
+#    active repository has moved on. This file is a version record, not a lockfile.
+# 3. R must have png and cairo capabilities for the figures. Automatic download
+#    requires libcurl and access to the CDC URLs.
+# 4. Use tools::sha256sum from R for input verification.
+
+# Tested OS: Windows 11 x64 (build 22631); run commands from the repository root.
+# Base R graphics/grDevices generate PNG and Cairo PDF. The workflow does not export TIFF.
+# For optional TIFF conversion, use a separate publication workflow, or verify
+# capabilities("tiff") before using grDevices::tiff(). No TIFF conversion tool is
+# required to reproduce the repository outputs. The journal TIFFs are not included.
+# sessionInfo.txt is the preserved historical record, not a clean installation log.

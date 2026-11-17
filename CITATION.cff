@@ -10,3 +10,5 @@ authors:
   - family-names: "Yang"
     given-names: "Wenyan"
     affiliation: "The Affiliated Hospital of Guizhou Medical University, Guiyang, Guizhou, China"
+version: "v1.0.2"
+repository-code: "https://github.com/Airers0225/A1_NHANES_VCTE_Quality_Analysis"

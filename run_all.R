@@ -1,6 +1,6 @@
-# Run from the repository root using Rscript --vanilla run_all.R [--download].
+# Run from the repository root using Rscript --vanilla run_all.R [--download] [--verify-only].
 arguments <- commandArgs(trailingOnly = TRUE)
-stopifnot(length(arguments) == 0L || identical(arguments, "--download"))
+stopifnot(!anyDuplicated(arguments), all(arguments %in% c("--download", "--verify-only")))
 if (!exists("sha256sum", envir = asNamespace("tools"), inherits = FALSE)) {
   stop("Use R 4.6.1 or a version providing tools::sha256sum.")
 }
@@ -27,13 +27,20 @@ download_verified <- function(path, i) {
   if (file.exists(path) || !file.rename(temp, path)) stop("Cannot place downloaded file: ", path)
 }
 for (i in seq_along(paths)) {
-  if (!file.exists(paths[i]) && identical(arguments, "--download")) download_verified(paths[i], i)
+  if (!file.exists(paths[i]) && "--download" %in% arguments) download_verified(paths[i], i)
   if (!matches_manifest(paths[i], i)) {
     stop("Missing or changed XPT: ", paths[i], ". Consult the manifest before rerunning.")
   }
 }
 cat("Verified all eight CDC XPT inputs against the pinned SHA-256 manifest.\n")
 
+checks <- new.env()
+sys.source("check_results.R", envir = checks)
+checks$verify_references()
+if ("--verify-only" %in% arguments) {
+  cat("Input and reference checks complete. Analysis was not run.\n")
+  quit(save = "no")
+}
 sys.source("A1_analysis.R", envir = new.env())
 reason_audit <- new.env()
 sys.source("A1_ReasonCode_Audit_Code.R", envir = reason_audit)
@@ -45,6 +52,6 @@ stopifnot(
   sum(checked$records$audit_class == "S1_other_column_yes") == 13L
 )
 cat("Reason code 2 audit verified in both releases. No record-level CSV was written.\n")
-sys.source("check_results.R", envir = new.env())
+checks$compare_results()
 sys.source("plot_sample_flow.R", envir = new.env())
 sys.source("A1_plot.R", envir = new.env())

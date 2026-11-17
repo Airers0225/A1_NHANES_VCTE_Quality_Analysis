@@ -1,0 +1,91 @@
+"period","domain","domain_n","variable","category","code","unweighted_n","weighted_mean","mean_se","weighted_percent"
+"2017–March 2020","D",7792,"Sample","Unweighted total",,7792,,,
+"2017–March 2020","D",7792,"RIDAGEYR","Age, years",,,48.2727645146638,0.530987441665147,
+"2017–March 2020","D",7792,"BMXBMI","BMI, kg/m²",,,29.9157219112779,0.172195447689346,
+"2017–March 2020","D",7792,"RIAGENDR","Male",1,3852,,,49.3914178479421
+"2017–March 2020","D",7792,"RIAGENDR","Female",2,3940,,,50.6085821520579
+"2017–March 2020","D",7792,"RIDRETH3","Mexican American",1,927,,,8.39549399173534
+"2017–March 2020","D",7792,"RIDRETH3","Other Hispanic",2,816,,,7.62086310953201
+"2017–March 2020","D",7792,"RIDRETH3","Non-Hispanic White",3,2665,,,62.9647290440051
+"2017–March 2020","D",7792,"RIDRETH3","Non-Hispanic Black",4,2069,,,11.1993125263842
+"2017–March 2020","D",7792,"RIDRETH3","Non-Hispanic Asian",6,940,,,5.82038467524214
+"2017–March 2020","D",7792,"RIDRETH3","Other race, including multiracial",7,375,,,3.99921665310125
+"2017–March 2020","D",7792,"RIDAGEYR","Missing",,0,,,
+"2017–March 2020","D",7792,"BMXBMI","Missing",,0,,,
+"2017–March 2020","D",7792,"RIAGENDR","Missing",,0,,,
+"2017–March 2020","D",7792,"RIDRETH3","Missing",,0,,,
+"2017–March 2020","BMI 18.5–<30",4439,"Sample","Unweighted total",,4439,,,
+"2017–March 2020","BMI 18.5–<30",4439,"RIDAGEYR","Age, years",,,48.1599943365556,0.705604131280268,
+"2017–March 2020","BMI 18.5–<30",4439,"BMXBMI","BMI, kg/m²",,,25.1658541334893,0.0582827103721204,
+"2017–March 2020","BMI 18.5–<30",4439,"RIAGENDR","Male",1,2320,,,49.745893195326
+"2017–March 2020","BMI 18.5–<30",4439,"RIAGENDR","Female",2,2119,,,50.254106804674
+"2017–March 2020","BMI 18.5–<30",4439,"RIDRETH3","Mexican American",1,461,,,7.17357027683999
+"2017–March 2020","BMI 18.5–<30",4439,"RIDRETH3","Other Hispanic",2,471,,,7.86259223437763
+"2017–March 2020","BMI 18.5–<30",4439,"RIDRETH3","Non-Hispanic White",3,1518,,,63.4341222396595
+"2017–March 2020","BMI 18.5–<30",4439,"RIDRETH3","Non-Hispanic Black",4,1003,,,9.66824539438367
+"2017–March 2020","BMI 18.5–<30",4439,"RIDRETH3","Non-Hispanic Asian",6,792,,,8.4226578559727
+"2017–March 2020","BMI 18.5–<30",4439,"RIDRETH3","Other race, including multiracial",7,194,,,3.43881199876649
+"2017–March 2020","BMI 18.5–<30",4439,"RIDAGEYR","Missing",,0,,,
+"2017–March 2020","BMI 18.5–<30",4439,"BMXBMI","Missing",,0,,,
+"2017–March 2020","BMI 18.5–<30",4439,"RIAGENDR","Missing",,0,,,
+"2017–March 2020","BMI 18.5–<30",4439,"RIDRETH3","Missing",,0,,,
+"2017–March 2020","BMI ≥30",3353,"Sample","Unweighted total",,3353,,,
+"2017–March 2020","BMI ≥30",3353,"RIDAGEYR","Age, years",,,48.427458394933,0.555591299365963,
+"2017–March 2020","BMI ≥30",3353,"BMXBMI","BMI, kg/m²",,,36.4314115167982,0.191108542862657,
+"2017–March 2020","BMI ≥30",3353,"RIAGENDR","Male",1,1532,,,48.9051619257955
+"2017–March 2020","BMI ≥30",3353,"RIAGENDR","Female",2,1821,,,51.0948380742045
+"2017–March 2020","BMI ≥30",3353,"RIDRETH3","Mexican American",1,466,,,10.0716828922165
+"2017–March 2020","BMI ≥30",3353,"RIDRETH3","Other Hispanic",2,345,,,7.28926820630684
+"2017–March 2020","BMI ≥30",3353,"RIDRETH3","Non-Hispanic White",3,1147,,,62.3208331486015
+"2017–March 2020","BMI ≥30",3353,"RIDRETH3","Non-Hispanic Black",4,1066,,,13.2995727155161
+"2017–March 2020","BMI ≥30",3353,"RIDRETH3","Non-Hispanic Asian",6,148,,,2.25068439985792
+"2017–March 2020","BMI ≥30",3353,"RIDRETH3","Other race, including multiracial",7,181,,,4.76795863750113
+"2017–March 2020","BMI ≥30",3353,"RIDAGEYR","Missing",,0,,,
+"2017–March 2020","BMI ≥30",3353,"BMXBMI","Missing",,0,,,
+"2017–March 2020","BMI ≥30",3353,"RIAGENDR","Missing",,0,,,
+"2017–March 2020","BMI ≥30",3353,"RIDRETH3","Missing",,0,,,
+"August 2021–August 2023","D",5580,"Sample","Unweighted total",,5580,,,
+"August 2021–August 2023","D",5580,"RIDAGEYR","Age, years",,,48.7957697797473,0.576627707832019,
+"August 2021–August 2023","D",5580,"BMXBMI","BMI, kg/m²",,,29.791084074909,0.247827084053442,
+"August 2021–August 2023","D",5580,"RIAGENDR","Male",1,2542,,,49.6936837152596
+"August 2021–August 2023","D",5580,"RIAGENDR","Female",2,3038,,,50.3063162847404
+"August 2021–August 2023","D",5580,"RIDRETH3","Mexican American",1,388,,,7.38361012062591
+"August 2021–August 2023","D",5580,"RIDRETH3","Other Hispanic",2,553,,,9.39827476374316
+"August 2021–August 2023","D",5580,"RIDRETH3","Non-Hispanic White",3,3303,,,60.4181455136894
+"August 2021–August 2023","D",5580,"RIDRETH3","Non-Hispanic Black",4,666,,,10.5996818276168
+"August 2021–August 2023","D",5580,"RIDRETH3","Non-Hispanic Asian",6,310,,,6.0625910540475
+"August 2021–August 2023","D",5580,"RIDRETH3","Other race, including multiracial",7,360,,,6.13769672027716
+"August 2021–August 2023","D",5580,"RIDAGEYR","Missing",,0,,,
+"August 2021–August 2023","D",5580,"BMXBMI","Missing",,0,,,
+"August 2021–August 2023","D",5580,"RIAGENDR","Missing",,0,,,
+"August 2021–August 2023","D",5580,"RIDRETH3","Missing",,0,,,
+"August 2021–August 2023","BMI 18.5–<30",3275,"Sample","Unweighted total",,3275,,,
+"August 2021–August 2023","BMI 18.5–<30",3275,"RIDAGEYR","Age, years",,,48.2440007125256,0.743629550631718,
+"August 2021–August 2023","BMI 18.5–<30",3275,"BMXBMI","BMI, kg/m²",,,25.2153294130454,0.0866863175709508,
+"August 2021–August 2023","BMI 18.5–<30",3275,"RIAGENDR","Male",1,1566,,,50.4939971567833
+"August 2021–August 2023","BMI 18.5–<30",3275,"RIAGENDR","Female",2,1709,,,49.5060028432167
+"August 2021–August 2023","BMI 18.5–<30",3275,"RIDRETH3","Mexican American",1,195,,,6.56195873706539
+"August 2021–August 2023","BMI 18.5–<30",3275,"RIDRETH3","Other Hispanic",2,329,,,9.17974545459497
+"August 2021–August 2023","BMI 18.5–<30",3275,"RIDRETH3","Non-Hispanic White",3,1957,,,61.2848742917098
+"August 2021–August 2023","BMI 18.5–<30",3275,"RIDRETH3","Non-Hispanic Black",4,324,,,8.50216170031768
+"August 2021–August 2023","BMI 18.5–<30",3275,"RIDRETH3","Non-Hispanic Asian",6,266,,,8.81808230785844
+"August 2021–August 2023","BMI 18.5–<30",3275,"RIDRETH3","Other race, including multiracial",7,204,,,5.65317750845376
+"August 2021–August 2023","BMI 18.5–<30",3275,"RIDAGEYR","Missing",,0,,,
+"August 2021–August 2023","BMI 18.5–<30",3275,"BMXBMI","Missing",,0,,,
+"August 2021–August 2023","BMI 18.5–<30",3275,"RIAGENDR","Missing",,0,,,
+"August 2021–August 2023","BMI 18.5–<30",3275,"RIDRETH3","Missing",,0,,,
+"August 2021–August 2023","BMI ≥30",2305,"Sample","Unweighted total",,2305,,,
+"August 2021–August 2023","BMI ≥30",2305,"RIDAGEYR","Age, years",,,49.6050597352587,0.552324036367261,
+"August 2021–August 2023","BMI ≥30",2305,"BMXBMI","BMI, kg/m²",,,36.5024285607039,0.13808600232052,
+"August 2021–August 2023","BMI ≥30",2305,"RIAGENDR","Male",1,976,,,48.5198491022626
+"August 2021–August 2023","BMI ≥30",2305,"RIAGENDR","Female",2,1329,,,51.4801508977374
+"August 2021–August 2023","BMI ≥30",2305,"RIDRETH3","Mexican American",1,193,,,8.58874149016024
+"August 2021–August 2023","BMI ≥30",2305,"RIDRETH3","Other Hispanic",2,224,,,9.71879576679427
+"August 2021–August 2023","BMI ≥30",2305,"RIDRETH3","Non-Hispanic White",3,1346,,,59.1468982911214
+"August 2021–August 2023","BMI ≥30",2305,"RIDRETH3","Non-Hispanic Black",4,342,,,13.6761536187115
+"August 2021–August 2023","BMI ≥30",2305,"RIDRETH3","Non-Hispanic Asian",6,44,,,2.02106077139275
+"August 2021–August 2023","BMI ≥30",2305,"RIDRETH3","Other race, including multiracial",7,156,,,6.84835006181982
+"August 2021–August 2023","BMI ≥30",2305,"RIDAGEYR","Missing",,0,,,
+"August 2021–August 2023","BMI ≥30",2305,"BMXBMI","Missing",,0,,,
+"August 2021–August 2023","BMI ≥30",2305,"RIAGENDR","Missing",,0,,,
+"August 2021–August 2023","BMI ≥30",2305,"RIDRETH3","Missing",,0,,,
